@@ -11,6 +11,10 @@ $(document).ready(function () {
         showPage('blog');
     });
 
+    $('.burger-menu').click(function () {
+        $('nav ul').slideToggle();
+    });
+
     function showPage(page) {
         $('.content-section').hide();
         $('#' + page).show();
